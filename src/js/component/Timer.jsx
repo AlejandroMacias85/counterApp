@@ -21,7 +21,7 @@ const Timer = () => {
     if (isActive) {
       interval = setInterval(() => {
         setSeconds((seconds) => seconds + 1);
-      }, 100);
+      }, 1000);
     } else if (!isActive && seconds !== 0) {
       clearInterval(interval);
     }
